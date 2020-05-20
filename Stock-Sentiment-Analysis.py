@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report,confusion_matrix,accuracy_score
 
-df=pd.read_csv('C:\Users\aaroh\Desktop\StockSentimentanlysis/Data.csv', encoding="ISO-8859-1")
+df=pd.read_csv('./Data.csv', encoding="ISO-8859-1")
 df.head()
 train = df[df['Date'] < '20150101']
 test = df[df['Date'] > '20141231']
